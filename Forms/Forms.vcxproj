@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{AAB5EB50-1FEC-4FF9-838B-11E3D2AAC38D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Forms</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Button\Button.vcxproj">
+      <Project>{cb466db6-5a8b-4250-8887-37852c89b030}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\CheckList\CheckList.vcxproj">
+      <Project>{a0ad1a1b-a98f-4e31-946d-022dc08cfe7b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ComboBox\ComboBox.vcxproj">
+      <Project>{d6163821-4d49-4be1-a69c-e1b70fa0850a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Control\Control.vcxproj">
+      <Project>{49a01e56-8c30-48e1-b7f5-b00ff3f558f4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\EventEngine\EventEngine.vcxproj">
+      <Project>{c058eb64-ed86-4167-a211-1c5b8038d1e2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Graphics\Graphics.vcxproj">
+      <Project>{59e624c3-85ca-415f-8f4a-089fe90a9fb5}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Label\Label.vcxproj">
+      <Project>{cb99d2bf-b7cc-41f7-891c-a795f314d226}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\MessageBox\MessageBox.vcxproj">
+      <Project>{fc2a99df-5b19-414e-b419-020faed6923c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\NumericBox\NumericBox.vcxproj">
+      <Project>{9a275b11-9696-4d8a-a4f7-78cb23974f5d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Panel\Panel.vcxproj">
+      <Project>{8e1316b8-2618-4f40-86b7-7d8ea5638130}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\radiolist\radiolist.vcxproj">
+      <Project>{48c46449-72cf-4d80-a866-54a6f0746612}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\TextBox\TextBox.vcxproj">
+      <Project>{b4ab25af-58f4-4cd2-b156-9fdd582cb639}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
